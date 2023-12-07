@@ -1,0 +1,23 @@
+version: '2.0'
+
+services:
+ mysql:
+  container_name: desafio_mysql
+  image: mysql:latest
+  restart: always 
+  environment:
+   MYSQL_ROOT_PASSWORD: urubu100
+   MYSQL_DATABASE: desafio_java
+  volumes:
+   - ./init-scripts:/docker-entrypoint-initdb.d
+  ports: 
+   - "3306:3306"
+ app:
+  container_name: desafio_java
+  image: openjdk:17-jdk-slim
+  working_dir: /home
+  tty: true
+  volumes:
+    - ./executavel:/home
+volumes:
+ gct_mysql:
