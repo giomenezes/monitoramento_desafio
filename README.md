@@ -10,10 +10,10 @@ O aplicativo Java um banco relacionado, que contém os recursos do sistema que s
 
 ## Como iniciar o aplicativo:
 ### Em Docker:
-
-*Avisos*
+### Avisos
 
 **É necessário ter docker e docker compose em sua máquina!**
+
 **Porta 3306 precisa estar liberada!**
 
   1. Suba o docker compose com o comando:
@@ -26,8 +26,7 @@ O aplicativo Java um banco relacionado, que contém os recursos do sistema que s
 > java -jar monitoramento_desafio-1.1.1.jar
 
 ### Localmente:
-
-*Avisos*
+### Avisos
 
 **É necessário ter o Java 17 instalado em sua máquina**
 
