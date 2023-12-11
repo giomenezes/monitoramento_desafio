@@ -1,5 +1,5 @@
 # Desafio Java: Monitoramento de Componentes
-<sub>Desafio de Java do segundo semestre de Ciência da Computação</sub>
+Desafio de Java do segundo semestre de Ciência da Computação
 
 ## Objetivo:
 Desenvolver um aplicativo Java para monitoramento de recursos do sistema, aderindo aos princípios SOLID e utilizando a biblioteca Looca.
@@ -12,6 +12,7 @@ O aplicativo Java um banco relacionado, que contém os recursos do sistema que s
 ### Em Docker:
 
 *Avisos*
+
 **É necessário ter docker e docker compose em sua máquina!**
 **Porta 3306 precisa estar liberada!**
 
@@ -27,6 +28,7 @@ O aplicativo Java um banco relacionado, que contém os recursos do sistema que s
 ### Localmente:
 
 *Avisos*
+
 **É necessário ter o Java 17 instalado em sua máquina**
 
   1. Instale o jar executável clicando [aqui]():
