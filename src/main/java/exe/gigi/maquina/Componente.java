@@ -1,9 +1,8 @@
 package exe.gigi.maquina;
 
 import com.github.britooo.looca.api.core.Looca;
-import exe.gigi.alertas.Alertavel;
 
-public abstract class Componente implements Alertavel {
+public abstract class Componente {
     private Integer id_componente;
     private String nome;
     private String unidade_medida;
@@ -17,12 +16,6 @@ public abstract class Componente implements Alertavel {
     }
 
     public abstract double getValorEmUso();
-
-    @Override
-    public abstract Integer alertarAtencao();
-
-    @Override
-    public abstract Integer alertarUrgencia();
 
     public Integer getIdComponente() {
         return id_componente;

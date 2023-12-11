@@ -5,8 +5,6 @@ import exe.gigi.utils.Conversor;
 
 public class RAM extends Componente {
     private Memoria memoria;
-    private Integer limite_medio;
-    private Integer limite_maximo;
 
     public RAM(Integer id, String nome, String unidade_medida) {
         super(id, nome, unidade_medida);
@@ -18,13 +16,4 @@ public class RAM extends Componente {
         return Conversor.converterGB(memoria.getEmUso());
     }
 
-    @Override
-    public Integer alertarAtencao() {
-        return 60;
-    }
-
-    @Override
-    public Integer alertarUrgencia() {
-        return 80;
-    }
 }
