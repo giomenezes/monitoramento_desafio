@@ -77,11 +77,6 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.slack.api</groupId>
-            <artifactId>slack-api-client</artifactId>
-            <version>1.36.1</version>
-        </dependency>
     </dependencies>
 
 </project>
