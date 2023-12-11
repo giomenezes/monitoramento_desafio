@@ -11,11 +11,9 @@ O aplicativo Java está relacionado com um banco que contém os recursos do sist
 ## Como iniciar o aplicativo:
 ### Em Docker:
 
-**Avisos:**
-
-***É necessário ter docker e docker compose em sua máquina!***
-
-***Porta 3306 precisa estar liberada!***
+> [!WARNING]
+> É necessário ter docker e docker compose em sua máquina!
+> Porta 3306 precisa estar liberada!
 
   1. Suba o docker compose com o comando:
 ```
@@ -32,12 +30,18 @@ docker exec -it desafio_java bash
 java -jar monitoramento_desafio-1.1.1.jar
 ```
 
+> [!CAUTION]
+> Não se esqueça de derrubar o compose ao finalizar a utilização.
+> ```
+> docker compose down
+> ```
+
 ### Localmente:
-**Avisos:**
 
-***É necessário ter o Java 17 instalado em sua máquina***
+> [!WARNING]
+> É necessário ter o Java 17 instalado em sua máquina!
 
-  1. Instale o jar executável clicando [aqui]():
+  1. Instale o jar executável clicando [aqui](https://github.com/giomenezes/monitoramento_desafio/releases/download/1.1.1/monitoramento_desafio-1.1.1.jar):
   2. No terminal, vá para a pasta onde o jar executável salvou;
   3. Inicie o java com o seguinte comando:
 ```
@@ -48,3 +52,5 @@ java -jar monitoramento_desafio-1.1.1.jar
 ***Esse projeto está em constante atualização, aqui vai uma lista de updates futuros***
   - [ ] Adicionar tabela de alertas;
   - [ ] Alertas personalizados (integração com o Slack)
+
+[^1]: Projeto similar: [monitoramento de processos](https://github.com/giomenezes/monitoramento-processos)
