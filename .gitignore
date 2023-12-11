@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### exe.gigi ###
+dependency-reduced-pom.xml
+*.db
