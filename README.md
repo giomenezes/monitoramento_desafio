@@ -54,4 +54,5 @@ java -jar monitoramento_desafio-1.1.1.jar
   - [ ] Adicionar tabela de alertas;
   - [ ] Alertas personalizados (integração com o Slack)
 
-Projeto similar: [monitoramento de processos](https://github.com/giomenezes/monitoramento-processos)[^1].
+Projeto similar: [^1].
+[^1]: [monitoramento de processos](https://github.com/giomenezes/monitoramento-processos)
