@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS componente (
-	ìd_componente INT PRIMARY KEY NOT NULL auto_increment,
+	id_componente INT PRIMARY KEY NOT NULL auto_increment,
     nome VARCHAR(40) NOT NULL,
     unidade_medida VARCHAR(15) NOT NULL
 );
@@ -9,12 +9,12 @@ CREATE TABLE IF NOT EXISTS registro (
     valor DOUBLE,
     data_hora DATETIME,
     fk_componente INT NOT NULL,
-    FOREIGN KEY(fk_componente) REFERENCES componente(ìd_componente)
+    FOREIGN KEY(fk_componente) REFERENCES componente(id_componente)
 );
 
 INSERT INTO componente VALUES 
 	(NULL, "CPU", "%"),
-    (NULL, "RAM", "GB"),
+    (NULL, "MEMORIA", "GB"),
     (NULL, "DISCO", "GB");
 
 CREATE OR REPLACE VIEW vw_registro_geral AS 
@@ -25,5 +25,5 @@ SELECT
     registro.data_hora
 FROM registro
     INNER JOIN componente ON 
-        registro.fk_componente = componente.ìd_componente;
+        registro.fk_componente = componente.id_componente;
 
